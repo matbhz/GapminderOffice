@@ -1,0 +1,5 @@
+{
+  "name"    : "GapminderOffice-app",
+  "version" : "0.1.0",
+  "main"    : "main.js" // if main.js is not present, Electron will try to load index.js
+}
