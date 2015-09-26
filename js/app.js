@@ -1,15 +1,15 @@
 "use strict";
 
-var gapminderOfflineApp = angular.module('gapminderOfflineApp', ['ngRoute', 'ngAnimate']);
+var gapminderOfflineApp = angular.module('gapminderOfflineApp', ['ngRoute']);
 
 // ROUTES
 
-gapminderOfflineApp.config(function($routeProvider) {
+gapminderOfflineApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-	.when('/', {
-		templateUrl: "index.html",
-		controller: "IndexController"
-	})
+//	.when('/', {
+//		templateUrl: "../index.html",
+//		controller: "IndexController"
+//	})
 
 	.when('/bubbleChart', {
 		templateUrl: "html/bubbleChart.html",
@@ -17,23 +17,25 @@ gapminderOfflineApp.config(function($routeProvider) {
 	})
 
 	.when('/mountainChart', {
-		templateUrl: "../html/mountainChart.html",
+		templateUrl: "html/mountainChart.html",
 		controller: "MountainChartController"
 	})
 
 	.otherwise({
 		redirectTo: "/"
 	});
-});
+}]);
 
 // CONTROLLERS
 
 gapminderOfflineApp.controller('IndexController', function($scope) {
 	$scope.pageClass = "page-index";
+
 });
 
 gapminderOfflineApp.controller('BubbleChartController', function($scope) {
 	$scope.pageClass = "page-bubbleChart";
+	$scope.pageName = "bubbleChart";
 });
 
 gapminderOfflineApp.controller('MountainChartController', function($scope) {
