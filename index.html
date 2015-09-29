@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
-		<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
+    <title>Gapminder Offline</title>
+
+		  <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
      	<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
-    <script src="js/app.js"></script>
+     	<link rel="stylesheet" type="text/css" href="css/main.css">
+      <script src="js/app.js"></script>
+      <script src="js/menu.js"></script>
   </head>
   <body ng-app="gapminderOfflineApp">
   	<nav>
@@ -19,8 +22,8 @@
   			<li>
   				Gapminder
   				<ul>
-  					<li>About</li>
-  					<li>Website</li>
+  					<li><a href="#about">About</a></li>
+  					<li><a href="#website">Website</a></li>
   				</ul>
   			</li>
   		</ul>
