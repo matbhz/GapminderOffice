@@ -7,11 +7,11 @@ var taskBarTemplate = [
     submenu: [
       {
         label: 'BubbleChart',
-        click: function() { console.log("PLACEHOLDER BubbleChart link"); }
+        click: function() { window.location.href = '#bubbleChart' }
       },
       {
         label: 'Mountain Chart',
-        click: function() { console.log("PLACEHOLDER MountainChart link"); }
+        click: function() { window.location.href = '#mountainChart' }
       }
     ]
   }, 
@@ -20,11 +20,11 @@ var taskBarTemplate = [
     submenu: [
       {
         label: 'About',
-        click: function() { console.log("PLACEHOLDER About link");  }
+        click: function() { window.location.href = '#about'  }
       },
       {
         label: 'Website',
-        click: function() { console.log("PLACEHOLDER Website link");  }
+        click: function() { window.location.href = '#website'  }
       },
     ]
   }
