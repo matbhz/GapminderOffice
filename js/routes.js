@@ -14,6 +14,6 @@ gapminderOfflineApp.config(['$routeProvider', function($routeProvider) {
 	})
 
 	.otherwise({
-		redirectTo: "/"
+		redirectTo: "/bubbleChart"
 	});
 }]);
