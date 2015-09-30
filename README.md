@@ -48,3 +48,5 @@ Tools
    |_ Mountain Chart
 ```
 
+Note the `click` attribute above. It's hold an event that runs a function containing your custom task.
+If you want to change among tools, make sure you your AngularJS routes setand navigate to its custom URL accordingly.
